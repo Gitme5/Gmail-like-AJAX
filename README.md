@@ -2,7 +2,7 @@
 
 Pour tester:
 
-Bunlde Install
+Bundle Install
 
 rails db:create db:migrate db:seed
 
