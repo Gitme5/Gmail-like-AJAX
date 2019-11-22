@@ -17,3 +17,10 @@ require 'faker'
     my_task.save
   end
 end
+puts "Categories et Tasks done"
+
+
+5.times do
+	my_mail = Email.create(object: Faker::Book.title, body: Faker::Lorem.paragraph_by_chars)
+end
+puts "Emails done"

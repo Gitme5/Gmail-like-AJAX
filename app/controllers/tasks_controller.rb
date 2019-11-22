@@ -8,13 +8,23 @@ before_action :authenticate_user!
     @task = Task.new(task_params)
     @category = Category.find(category_params)
     @task.category = @category
-    if @task.save
-      redirect_to root_path
-      flash[:notice] = "Task created"
-    else
-      redirect_to root_path
-      flash[:notice] = "Please try again"
+
+    respond_to do |format|
+      if @task.save
+        #redirect_to root_path
+        #flash[:notice] = "Task created"
+        format.html { redirect_to root_path }
+        format.js { }
+
+      else
+        #redirect_to root_path
+        #flash[:notice] = "Please try again"
+          format.html { redirect_to root_path }
+          format.js { }
+      
+      end
     end
+
   end
 
   def edit

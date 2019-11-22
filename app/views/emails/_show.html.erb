@@ -1,0 +1,9 @@
+<div class = "container">
+	<h5><strong>Objet : </strong><%= @email.object %></h5>
+	<%= @email.body %> <br> <br>
+	<div class = "container" style="text-align: right">
+		<button type="button" class="btn btn-outline-info">Marqué comme non-lu</button> <br> <br>
+		<%= button_to "Supprimer", email_path(email.id), method: :delete, class: "btn btn-outline-danger", remote: true%>
+	</div>
+</div>
+

@@ -1,24 +1,12 @@
-# README
+# THP Gmail like - AJAX
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Pour tester:
 
-Things you may want to cover:
+Bunlde Install
 
-* Ruby version
+rails db:create db:migrate db:seed
 
-* System dependencies
+rails s
 
-* Configuration
 
-* Database creation
 
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
